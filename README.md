@@ -6,13 +6,17 @@
 
 
 
-## Ubuntu
-apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
-### vscode
-- Added run and build tasks so either F5 for debug-run och ctrl-f5 for run without debug
-- 
+## Vulcan
+-  Platform setup at: https://linuxconfig.org/install-and-test-vulkan-on-linux
 
-### terminal 
-- Docs at https://docs.godotengine.org/en/latest/development/compiling/index.html
+## Ubuntu
+- Setup vulcan: `apt install libvulkan1 mesa-vulkan-drivers vulkan-utils`
 - Install all deps `sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libudev-dev libxi-dev libxrandr-dev yasm` 
-- From terminal `scons -j8 platform=linuxbsd`
+
+### Building from VSCode
+- Added run and build tasks so either F5 for debug-run och ctrl-f5 for run without debug
+- These are tasks.json and launch.json
+
+### Building from Terminal 
+- Docs at https://docs.godotengine.org/en/latest/development/compiling/index.html
+- j8 should be equal to your cores `scons -j8 platform=linuxbsd`
