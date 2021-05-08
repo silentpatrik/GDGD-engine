@@ -6,6 +6,11 @@
 
 
 
+# Building
+-  In customize.py there is a bunch of stuff disabled to try and minimize output. But its not enough, for example 3d view in editor is not needed for this project but cannot be disabled from build configs due to dependencies in the tool (editor).
+-  There might be things disabled in customize.py that needs to be enabled.
+-  Status now for ubuntu is atleast it builds fine with a tool binary size of about 140mb after stripping debug binaries.
+
 ## Vulcan
 -  Platform setup at: https://linuxconfig.org/install-and-test-vulkan-on-linux
 
@@ -20,3 +25,6 @@
 ### Building from Terminal 
 - Docs at https://docs.godotengine.org/en/latest/development/compiling/index.html
 - j8 should be equal to your cores `scons -j8 platform=linuxbsd`
+
+## Post build
+- Stripping binary from debug symbols will reduce size with about 400mb `strip bin/godot.linuxbsd.tools.64`
