@@ -7,8 +7,8 @@
 
 
 # Building
--  In customize.py there is a bunch of stuff disabled to try and minimize output. But its not enough, for example 3d view in editor is not needed for this project but cannot be disabled from build configs due to dependencies in the tool (editor).
--  There might be things disabled in customize.py that needs to be enabled.
+-  copy `custom/customize.py` to the root path of the project. 
+-  There is a bunch of stuff disabled to try and minimize output. But its not enough, for example 3d view in editor is not needed for this project but cannot be disabled from build configs due to dependencies in the tool (editor).
 -  Status now for ubuntu is atleast it builds fine with a tool binary size of about 140mb after stripping debug binaries.
 
 ## Vulcan
